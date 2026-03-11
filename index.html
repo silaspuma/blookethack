@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooket Hack</title>
+    <style>
+        :root {
+            --blooket-blue: #00a2ff;
+            --ios-gray: #f2f2f7;
+            --text-main: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--blooket-blue);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            width: 90%;
+            max-width: 450px;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: var(--blooket-blue);
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            background: var(--ios-gray);
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .step img {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+        }
+
+        .code-box {
+            display: flex;
+            background: #e9e9eb;
+            border-radius: 8px;
+            margin-top: 15px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+
+        .code-text {
+            flex-grow: 1;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            color: #555;
+            text-align: left;
+        }
+
+        .copy-btn {
+            background: #ddd;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #ccc;
+        }
+
+        .copy-btn:active {
+            background: #ccc;
+        }
+
+        .copy-btn img {
+            width: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-main);
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.png" alt="Blooket Logo" class="logo">
+    <h1>Blooket Hack</h1>
+
+    <div class="step">
+        <img src="ios-share.png" alt="Share Icon">
+        <p>Click <strong>Share</strong></p>
+    </div>
+
+    <div class="step">
+        <img src="ios-bookmark.png" alt="Bookmark Icon">
+        <p>Click <strong>Add to Bookmark</strong></p>
+    </div>
+
+    <div class="code-box">
+        <div class="code-text" id="code">bookmarklet goes here</div>
+        <button class="copy-btn" onclick="copyCode()">
+            <img src="ios-copy.png" alt="Copy Icon">
+        </button>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <div class="step">
+        <img src="settings.PNG" alt="Settings Icon">
+        <p>Open <strong>Settings</strong></p>
+    </div>
+
+    <div class="step">
+        <img src="apps.png" alt="Apps Icon">
+        <p>Click <strong>Apps</strong></p>
+    </div>
+
+    <div class="step">
+        <img src="safari.png" alt="Safari Icon">
+        <p>Click <strong>Safari</strong></p>
+    </div>
+
+    <div class="step">
+        <p style="margin-left: 39px;">Scroll down and turn on <strong>Show Favorites Bar</strong></p>
+    </div>
+</div>
+
+<script>
+    function copyCode() {
+        const text = document.getElementById('code').innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Code copied to clipboard!');
+        });
+    }
+</script>
+
+</body>
+</html>
